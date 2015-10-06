@@ -1,0 +1,14 @@
+PODS:
+  - SwiftScriptRunner (0.1.0)
+
+DEPENDENCIES:
+  - SwiftScriptRunner (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftScriptRunner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftScriptRunner: f2e166de0c469c6693048c213b973c1ffde2d352
+
+COCOAPODS: 0.38.2

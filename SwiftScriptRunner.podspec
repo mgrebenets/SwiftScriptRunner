@@ -9,32 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftScriptRunner"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SwiftScriptRunner."
+  s.summary          = "A helper class for running Swift scripts with asynchronous callbacks."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SwiftScriptRunner"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+                       A helper class for running Swift scripts with asynchronous callbacks.
+                        * Initialize runner, lock before each async call and unlock once it's done.
+                        * Wait for all locks to unlock at the end of the script.
+                        DESC
+  s.homepage         = "https://github.com/mgrebenets/SwiftScriptRunner"
   s.license          = 'MIT'
-  s.author           = { "Maksym Grebenets" => "maksym.grebenets@cba.com.au" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SwiftScriptRunner.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Maksym Grebenets" => "mgrebenets@gmail.com" }
+  s.source           = { :git => "https://github.com/mgrebenets/SwiftScriptRunner.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/mgrebenets'
 
-  s.platform     = :ios, '8.0'
+  s.platform = :osx, "10.10"
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'SwiftScriptRunner' => ['Pod/Assets/*.png']
-  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
 end

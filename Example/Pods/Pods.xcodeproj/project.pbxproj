@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20C3D5A18869EF4FDFFB62F6D4954928 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6896430FB049FF41A722C59154D3C1B9 /* Foundation.framework */; };
+		2418E58B1E40EA46979B69EDEFA765ED /* Pods-SwiftScriptRunner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ED7AD2CE012ED237FD1E15E4442EEC /* Pods-SwiftScriptRunner_Tests-dummy.m */; };
+		2ABE8A5E930294620D1D16F0CAF0F779 /* Pods-SwiftScriptRunner_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39AD9FA7ADAB1FAF09919EC99A9BE301 /* Pods-SwiftScriptRunner_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1045BB4541202E94A81A537EA79A53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E49399F0758F6D5A37F54A2B57C89 /* Cocoa.framework */; };
+		3FEBB2CD2EF15B7A20EB691C27962830 /* SwiftScriptRunner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8867D82E0ECC0B0227B6DDD67E2BBC /* SwiftScriptRunner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65E7C40341BC291F67FD6F611D8BD36A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E49399F0758F6D5A37F54A2B57C89 /* Cocoa.framework */; };
+		716DA2EFE9D1B5EF7F47FAB346BA0657 /* SwiftScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40B38E38F8643B13B1641CD65B845A /* SwiftScriptRunner.swift */; };
+		810D5D48E0C5C6CA04C5BCE5C0CD8FF8 /* SwiftScriptRunner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50095187B680FFC2B7F963740678CCC2 /* SwiftScriptRunner-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78366EEA7B193E3780284E79BAEC4534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 550E1FDEBB51F3FBE1F7BE157C4040D0;
+			remoteInfo = SwiftScriptRunner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A673AE2DAD5CFA2E741DB872899E086 /* Pods_SwiftScriptRunner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftScriptRunner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BE3727408EC492A170D418E0DA3760 /* SwiftScriptRunner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftScriptRunner.modulemap; sourceTree = "<group>"; };
+		39AD9FA7ADAB1FAF09919EC99A9BE301 /* Pods-SwiftScriptRunner_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftScriptRunner_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3E2E49399F0758F6D5A37F54A2B57C89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		4F9983F6A115B771F39DB2A23BB6A3FD /* Pods-SwiftScriptRunner_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftScriptRunner_Tests-resources.sh"; sourceTree = "<group>"; };
+		50095187B680FFC2B7F963740678CCC2 /* SwiftScriptRunner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftScriptRunner-dummy.m"; sourceTree = "<group>"; };
+		5640C8B090589FCBE975F62FBE71C3C4 /* Pods-SwiftScriptRunner_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftScriptRunner_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6896430FB049FF41A722C59154D3C1B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D8867D82E0ECC0B0227B6DDD67E2BBC /* SwiftScriptRunner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftScriptRunner-umbrella.h"; sourceTree = "<group>"; };
+		7428D0A9EAB6403CD38E2C4FE47E55D8 /* Pods-SwiftScriptRunner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftScriptRunner_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		76FD26F99C1198EA5C58509A46F8D410 /* SwiftScriptRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScriptRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		777EDA903D05F7111C0109FAACA80D86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E79E5EE61CA03ACFC0B9A013037CCBF /* Pods-SwiftScriptRunner_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftScriptRunner_Tests.modulemap"; sourceTree = "<group>"; };
+		894ACBF732656324ED1BC0497EF28FB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DC568B6F6428B6278EC7EC8D9F5B55 /* SwiftScriptRunner-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftScriptRunner-Private.xcconfig"; sourceTree = "<group>"; };
+		982FB328A374322957F558092E6647F3 /* Pods-SwiftScriptRunner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftScriptRunner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B702E32462A8B98BBB7CF78AB0579C8C /* Pods-SwiftScriptRunner_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftScriptRunner_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3ED7AD2CE012ED237FD1E15E4442EEC /* Pods-SwiftScriptRunner_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftScriptRunner_Tests-dummy.m"; sourceTree = "<group>"; };
+		CD40B38E38F8643B13B1641CD65B845A /* SwiftScriptRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftScriptRunner.swift; sourceTree = "<group>"; };
+		DA4610115038ED43C45A7D3A847F8B34 /* SwiftScriptRunner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftScriptRunner-prefix.pch"; sourceTree = "<group>"; };
+		DC4A06C1FBDE20DE587F8C99496F2DF7 /* SwiftScriptRunner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftScriptRunner.xcconfig; sourceTree = "<group>"; };
+		ECD72E0ECF7829CA970FFB4006374AC5 /* Pods-SwiftScriptRunner_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftScriptRunner_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12277A9DAC008A71CB97AB71B84F0EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1045BB4541202E94A81A537EA79A53 /* Cocoa.framework in Frameworks */,
+				20C3D5A18869EF4FDFFB62F6D4954928 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB88AE4FC1BCFE1DA35B45ED0FD7B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E7C40341BC291F67FD6F611D8BD36A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032C8EAE0DD2AE98697E541516467B52 /* Pods-SwiftScriptRunner_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				894ACBF732656324ED1BC0497EF28FB7 /* Info.plist */,
+				7E79E5EE61CA03ACFC0B9A013037CCBF /* Pods-SwiftScriptRunner_Tests.modulemap */,
+				5640C8B090589FCBE975F62FBE71C3C4 /* Pods-SwiftScriptRunner_Tests-acknowledgements.markdown */,
+				ECD72E0ECF7829CA970FFB4006374AC5 /* Pods-SwiftScriptRunner_Tests-acknowledgements.plist */,
+				C3ED7AD2CE012ED237FD1E15E4442EEC /* Pods-SwiftScriptRunner_Tests-dummy.m */,
+				B702E32462A8B98BBB7CF78AB0579C8C /* Pods-SwiftScriptRunner_Tests-frameworks.sh */,
+				4F9983F6A115B771F39DB2A23BB6A3FD /* Pods-SwiftScriptRunner_Tests-resources.sh */,
+				39AD9FA7ADAB1FAF09919EC99A9BE301 /* Pods-SwiftScriptRunner_Tests-umbrella.h */,
+				982FB328A374322957F558092E6647F3 /* Pods-SwiftScriptRunner_Tests.debug.xcconfig */,
+				7428D0A9EAB6403CD38E2C4FE47E55D8 /* Pods-SwiftScriptRunner_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftScriptRunner_Tests";
+			path = "Target Support Files/Pods-SwiftScriptRunner_Tests";
+			sourceTree = "<group>";
+		};
+		0BDB3FEFD99587C00AC8E7ABCA0C84C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				032C8EAE0DD2AE98697E541516467B52 /* Pods-SwiftScriptRunner_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D435EDBC799DB7A1EBA851C1373503F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E4102DBB591541135AF906E6FFA76C1F /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		52590BF62EC718B3501E9CD51A0043E1 /* SwiftScriptRunner */ = {
+			isa = PBXGroup;
+			children = (
+				0D435EDBC799DB7A1EBA851C1373503F /* Pod */,
+				F6DB939B9F3CCD67B25E8F6AE3F7C4ED /* Support Files */,
+			);
+			name = SwiftScriptRunner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		75F3419C041E075650D2BF3251582D28 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52590BF62EC718B3501E9CD51A0043E1 /* SwiftScriptRunner */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				75F3419C041E075650D2BF3251582D28 /* Development Pods */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				0BDB3FEFD99587C00AC8E7ABCA0C84C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A3D165204A0DBBB177C0D01935B3D0B7 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				3E2E49399F0758F6D5A37F54A2B57C89 /* Cocoa.framework */,
+				6896430FB049FF41A722C59154D3C1B9 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A673AE2DAD5CFA2E741DB872899E086 /* Pods_SwiftScriptRunner_Tests.framework */,
+				76FD26F99C1198EA5C58509A46F8D410 /* SwiftScriptRunner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D165204A0DBBB177C0D01935B3D0B7 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4102DBB591541135AF906E6FFA76C1F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD40B38E38F8643B13B1641CD65B845A /* SwiftScriptRunner.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F6DB939B9F3CCD67B25E8F6AE3F7C4ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				777EDA903D05F7111C0109FAACA80D86 /* Info.plist */,
+				29BE3727408EC492A170D418E0DA3760 /* SwiftScriptRunner.modulemap */,
+				DC4A06C1FBDE20DE587F8C99496F2DF7 /* SwiftScriptRunner.xcconfig */,
+				95DC568B6F6428B6278EC7EC8D9F5B55 /* SwiftScriptRunner-Private.xcconfig */,
+				50095187B680FFC2B7F963740678CCC2 /* SwiftScriptRunner-dummy.m */,
+				DA4610115038ED43C45A7D3A847F8B34 /* SwiftScriptRunner-prefix.pch */,
+				6D8867D82E0ECC0B0227B6DDD67E2BBC /* SwiftScriptRunner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftScriptRunner";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4FCB80C76C4B645A62E44E5B7A541CE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEBB2CD2EF15B7A20EB691C27962830 /* SwiftScriptRunner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3A0798AE2815EAECE80C95C363CA00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABE8A5E930294620D1D16F0CAF0F779 /* Pods-SwiftScriptRunner_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		550E1FDEBB51F3FBE1F7BE157C4040D0 /* SwiftScriptRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201C046D28B0EF907E5C669B7F637496 /* Build configuration list for PBXNativeTarget "SwiftScriptRunner" */;
+			buildPhases = (
+				18D85B054B6DB8E71D426CC64420EA40 /* Sources */,
+				12277A9DAC008A71CB97AB71B84F0EC4 /* Frameworks */,
+				4FCB80C76C4B645A62E44E5B7A541CE2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftScriptRunner;
+			productName = SwiftScriptRunner;
+			productReference = 76FD26F99C1198EA5C58509A46F8D410 /* SwiftScriptRunner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE61A85D5DF805158360988B1E5293A5 /* Pods-SwiftScriptRunner_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530DF8402DF069E4B4543A4B5F1B92ED /* Build configuration list for PBXNativeTarget "Pods-SwiftScriptRunner_Tests" */;
+			buildPhases = (
+				FE6A912D749CC8172927C63B8966D2BB /* Sources */,
+				CBB88AE4FC1BCFE1DA35B45ED0FD7B42 /* Frameworks */,
+				EE3A0798AE2815EAECE80C95C363CA00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CBF6F12727CDC28AB7144D3011233A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftScriptRunner_Tests";
+			productName = "Pods-SwiftScriptRunner_Tests";
+			productReference = 0A673AE2DAD5CFA2E741DB872899E086 /* Pods_SwiftScriptRunner_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE61A85D5DF805158360988B1E5293A5 /* Pods-SwiftScriptRunner_Tests */,
+				550E1FDEBB51F3FBE1F7BE157C4040D0 /* SwiftScriptRunner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D85B054B6DB8E71D426CC64420EA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D5D48E0C5C6CA04C5BCE5C0CD8FF8 /* SwiftScriptRunner-dummy.m in Sources */,
+				716DA2EFE9D1B5EF7F47FAB346BA0657 /* SwiftScriptRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6A912D749CC8172927C63B8966D2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2418E58B1E40EA46979B69EDEFA765ED /* Pods-SwiftScriptRunner_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CBF6F12727CDC28AB7144D3011233A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftScriptRunner;
+			target = 550E1FDEBB51F3FBE1F7BE157C4040D0 /* SwiftScriptRunner */;
+			targetProxy = 78366EEA7B193E3780284E79BAEC4534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DF235371CBABCEC453C60F163FCCF43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DC568B6F6428B6278EC7EC8D9F5B55 /* SwiftScriptRunner-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftScriptRunner/SwiftScriptRunner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftScriptRunner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/SwiftScriptRunner/SwiftScriptRunner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftScriptRunner;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E621D6BF749EDCE77ACBE7C6D464E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5577A3F22A37686E40DB6863D68D476C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CBB2D94790AA8197571E80BBF60F52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7428D0A9EAB6403CD38E2C4FE47E55D8 /* Pods-SwiftScriptRunner_Tests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftScriptRunner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftScriptRunner_Tests/Pods-SwiftScriptRunner_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftScriptRunner_Tests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94442FD22D6AC46ECA910E931C687418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DC568B6F6428B6278EC7EC8D9F5B55 /* SwiftScriptRunner-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftScriptRunner/SwiftScriptRunner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftScriptRunner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/SwiftScriptRunner/SwiftScriptRunner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftScriptRunner;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA9DE8DB4C5D0BF8BD7F0AA7B6FFAE54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982FB328A374322957F558092E6647F3 /* Pods-SwiftScriptRunner_Tests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftScriptRunner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftScriptRunner_Tests/Pods-SwiftScriptRunner_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftScriptRunner_Tests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201C046D28B0EF907E5C669B7F637496 /* Build configuration list for PBXNativeTarget "SwiftScriptRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF235371CBABCEC453C60F163FCCF43 /* Debug */,
+				94442FD22D6AC46ECA910E931C687418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E621D6BF749EDCE77ACBE7C6D464E29 /* Debug */,
+				5577A3F22A37686E40DB6863D68D476C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530DF8402DF069E4B4543A4B5F1B92ED /* Build configuration list for PBXNativeTarget "Pods-SwiftScriptRunner_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9DE8DB4C5D0BF8BD7F0AA7B6FFAE54 /* Debug */,
+				5CBB2D94790AA8197571E80BBF60F52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
