@@ -5,23 +5,35 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftScriptRunner.svg?style=flat)](http://cocoapods.org/pods/SwiftScriptRunner)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftScriptRunner.svg?style=flat)](http://cocoapods.org/pods/SwiftScriptRunner)
 
+
+
 ## Requirements
+
+- Xcode 7.0.1
+- cocoapods gem version 0.38.2
+- [cocoapods-rome](https://github.com/neonichu/Rome) gem version 0.2.0
+- carthage version 0.8.0
 
 ## Installation
 
-SwiftScriptRunner is available through [CocoaPods Rome](https://github.com/neonichu/Rome) and [Carthage](https://github.com/Carthage/Carthage). 
+SwiftScriptRunner is available through [CocoaPods Rome](https://github.com/neonichu/Rome) and [Carthage](https://github.com/Carthage/Carthage).
 
 ### CocoaPods Rome
 
-Make sure you have [cocoapods-rome](https://github.com/neonichu/Rome) Ruby gem insalled.
+Make sure you have [cocoapods-rome](https://github.com/neonichu/Rome) Ruby gem installed.
 
 Add the following line to your Podfile:
 
 ```ruby
+platform :osx, '10.10'
+use_frameworks!
+plugin 'cocoapods-rome'
+
 pod "SwiftScriptRunner"
 ```
 
 And run
+
 ```bash
 pod install --no-integrate
 ```
@@ -31,20 +43,50 @@ pod install --no-integrate
 Add the following line to your Cartfile:
 
 ```ruby
+github "mgrebenets/SwiftScriptRunner"
 ```
 
 And run
 
 ```bash
+carthage update --platform mac
 ```
 
 ## Usage
 
+Example with [Alamofire](https://github.com/Alamofire/Alamofire).
 
+```swift
+// alamofire.swift
+
+import Alamofire
+import SwiftScriptRunner
+
+var runner = SwiftScriptRunner()
+runner.lock() // Lock
+
+Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
+         .responseJSON { response in
+             print(response.result)   // Result of response serialization
+             runner.unlock() // Unlock
+         }
+
+runner.wait() // Wait
+```
+
+Now you can run it.
+
+```bash
+# When using CocoaPods
+swift -F Rome alamofire.swift
+
+# When using Carthage
+swift -F Carthage/Build/Mac alamofire.swift
+```
 
 ## Author
 
-Maksym Grebenets, mgrebenets@gmail.com, @mgrebenets
+Maksym Grebenets, mgrebenets@gmail.com, [@mgrebenets](https://twitter.com/mgrebenets)
 
 ## License
 
