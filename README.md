@@ -5,7 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftScriptRunner.svg?style=flat)](http://cocoapods.org/pods/SwiftScriptRunner)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftScriptRunner.svg?style=flat)](http://cocoapods.org/pods/SwiftScriptRunner)
 
+A simple utility for writing Swift scripts with async callbacks to 3rd party frameworks.
 
+See [this blog post](http://mgrebenets.github.io/swift/2015/10/08/async-swift-scripting/) for more details.
 
 ## Requirements
 
