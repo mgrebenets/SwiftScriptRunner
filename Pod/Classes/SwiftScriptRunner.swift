@@ -5,29 +5,29 @@
 import Foundation
 
 /// Helper for running Swift scripts with async callbacks
-public class SwiftScriptRunner {
+open class SwiftScriptRunner {
     /// A poor man's mutex
-    private var count = 0
+    fileprivate var count = 0
     /// Current run loop
-    private let runLoop = NSRunLoop.currentRunLoop()
+    fileprivate let runLoop = RunLoop.current
 
     /// Initializer
     public init() {}
 
     /// Lock the script
-    public func lock() {
-        count++
+    open func lock() {
+        count += 1
     }
 
     /// Unlock the script
-    public func unlock() {
-        count--
+    open func unlock() {
+        count -= 1
     }
 
     /// Wait for all locks to unlock
-    public func wait() {
+    open func wait() {
         while count > 0 &&
-            runLoop.runMode(NSDefaultRunLoopMode, beforeDate: NSDate(timeIntervalSinceNow: 0.1)) {
+            runLoop.run(mode: .defaultRunLoopMode, before: Date(timeIntervalSinceNow: 0.1)) {
                 // Run, run, run
         }
     }
