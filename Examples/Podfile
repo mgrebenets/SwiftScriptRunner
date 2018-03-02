@@ -6,3 +6,13 @@ target :dummy do
   pod "Alamofire", "~> 4.6.0"
   pod "SwiftScriptRunner", "~> 1.0.1"
 end
+
+post_install do |installer|
+  swift_version = `cat .swift-version`.strip
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      puts "Setting SWIFT_VERSION to #{swift_version} for #{target} in #{config} configuration"
+      config.build_settings["SWIFT_VERSION"] = swift_version
+    end
+  end
+end

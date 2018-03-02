@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.6.0)
+  - SwiftScriptRunner (1.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - SwiftScriptRunner (~> 1.0.1)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  SwiftScriptRunner: 5a78eab8bc8f13ea8ba7c017327af1e6a9530687
+
+PODFILE CHECKSUM: c444315796c5b8aaaa01e65584a8bd1af2a12cba
+
+COCOAPODS: 1.4.0
