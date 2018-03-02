@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftScriptRunner"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "A helper class for running Swift scripts with asynchronous callbacks."
 
   s.description      = <<-DESC
@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
   s.platform = :osx, "10.10"
   s.requires_arc = true
 
-  s.source_files = "Pod/Classes/**/*"
+  s.source_files = "Sources/**/*"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = "Foundation"
 end

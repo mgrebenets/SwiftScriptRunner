@@ -1,0 +1,7 @@
+platform :osx, "10.10"
+use_frameworks!
+plugin "cocoapods-rome"
+
+target :dummy do
+  pod "SwiftScriptRunner" "~> 1.0"
+end

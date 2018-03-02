@@ -27,9 +27,9 @@ Make sure you have [cocoapods-rome](https://github.com/neonichu/Rome) Ruby gem i
 Add the following line to your Podfile:
 
 ```ruby
-platform :osx, '10.10'
+platform :osx, "10.10"
 use_frameworks!
-plugin 'cocoapods-rome'
+plugin "cocoapods-rome"
 
 pod "SwiftScriptRunner"
 ```

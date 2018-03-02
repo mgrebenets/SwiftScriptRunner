@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "SwiftScriptRunner",
             dependencies: [],
-            path: "Pod/Classes"
+            path: "Sources"
         )
     ]
 )

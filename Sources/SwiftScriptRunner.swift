@@ -1,6 +1,4 @@
-//
 // Swift Script Runner
-//
 
 import Foundation
 
