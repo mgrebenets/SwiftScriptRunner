@@ -1,0 +1,11 @@
+framework module SwiftScriptRunner {
+  umbrella header "SwiftScriptRunner-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftScriptRunner.Swift {
+    header "SwiftScriptRunner-Swift.h"
+    requires objc
+}

@@ -6,7 +6,6 @@
 // #!/usr/bin/env xcrun swift -F Carthage/Build/Mac
 // - CocoaPods Rome:
 // #!/usr/bin/env xcrun swift -F Rome
-// - Swift Packgage Manager:
 
 import Alamofire
 import SwiftScriptRunner
