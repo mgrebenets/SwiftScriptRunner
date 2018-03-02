@@ -11,10 +11,10 @@ See [this blog post](http://mgrebenets.github.io/swift/2015/10/08/async-swift-sc
 
 ## Requirements
 
-- Xcode 7.0.1
-- cocoapods gem version 0.38.2
-- [cocoapods-rome](https://github.com/neonichu/Rome) gem version 0.2.0
-- carthage version 0.8.0
+- Xcode 9.2
+- cocoapods gem version 1.4.0
+- [cocoapods-rome](https://github.com/neonichu/Rome) gem version 0.8.0
+- carthage version 0.28.0
 
 ## Installation
 
@@ -24,28 +24,28 @@ SwiftScriptRunner is available through [CocoaPods Rome](https://github.com/neoni
 
 Make sure you have [cocoapods-rome](https://github.com/neonichu/Rome) Ruby gem installed.
 
-Add the following line to your Podfile:
+Add the following line to your `Podfile`:
 
 ```ruby
 platform :osx, "10.10"
 use_frameworks!
 plugin "cocoapods-rome"
 
-pod "SwiftScriptRunner"
+pod "SwiftScriptRunner", "~> 1.0.1"
 ```
 
 And run
 
 ```bash
-pod install --no-integrate
+pod install
 ```
 
 ### Carthage
 
-Add the following line to your Cartfile:
+Add the following line to your `Cartfile`:
 
 ```ruby
-github "mgrebenets/SwiftScriptRunner"
+github "mgrebenets/SwiftScriptRunner", ~> 1.0.1
 ```
 
 And run
@@ -54,12 +54,24 @@ And run
 carthage update --platform mac
 ```
 
+### Swift Package Manager
+
+_TODO:_
+
 ## Usage
 
-Example with [Alamofire](https://github.com/Alamofire/Alamofire).
+Example of asynchronous network request using [Alamofire](https://github.com/Alamofire/Alamofire).
 
 ```swift
-// alamofire.swift
+// Shebangs for using with different dependency managers.
+//
+// - Carthage:
+// #!/usr/bin/env xcrun swift -F Carthage/Build/Mac
+// - CocoaPods Rome:
+// #!/usr/bin/env xcrun swift -F Rome
+// - Swift Package Manager:
+
+// Example.swift
 
 import Alamofire
 import SwiftScriptRunner
@@ -67,11 +79,12 @@ import SwiftScriptRunner
 var runner = SwiftScriptRunner()
 runner.lock() // Lock
 
-Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo": "bar"])
-         .responseJSON { response in
-             print(response.result)   // Result of response serialization
-             runner.unlock() // Unlock
-         }
+Alamofire.request("http://httpbin.org/get")
+    .responseJSON { response in
+         print("Successful response:")
+         print(response)   // Result of response serialization
+         runner.unlock() // Unlock
+    }
 
 runner.wait() // Wait
 ```
@@ -80,11 +93,16 @@ Now you can run it.
 
 ```bash
 # When using CocoaPods
-swift -F Rome alamofire.swift
+swift -F Rome Example.swift
 
 # When using Carthage
-swift -F Carthage/Build/Mac alamofire.swift
+swift -F Carthage/Build/Mac Example.swift
+
+# When -F option is part of shebang and Example.swift is executable
+./Example.swift
 ```
+
+See `Examples` folder for details.
 
 ## Author
 

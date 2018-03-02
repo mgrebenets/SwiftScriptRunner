@@ -3,5 +3,6 @@ use_frameworks!
 plugin "cocoapods-rome"
 
 target :dummy do
-  pod "SwiftScriptRunner" "~> 1.0"
+  pod "Alamofire", "~> 4.6.0"
+  pod "SwiftScriptRunner", "~> 1.0.1"
 end
