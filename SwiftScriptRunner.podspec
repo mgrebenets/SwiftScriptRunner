@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftScriptRunner"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A helper class for running Swift scripts with asynchronous callbacks."
 
   s.description      = <<-DESC

@@ -1,5 +1,5 @@
 PODS:
-  - SwiftScriptRunner (0.1.0)
+  - SwiftScriptRunner (1.0.0)
 
 DEPENDENCIES:
   - SwiftScriptRunner (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SwiftScriptRunner: 560ee669d781e9285399faac80064727b987fdcb
+  SwiftScriptRunner: 9ad1a7ea0f216cc42c8cc11679edeadb980f0468
 
 PODFILE CHECKSUM: 99bfc4adaadefbd65f45d0c89a7e9b52754f1d66
 
