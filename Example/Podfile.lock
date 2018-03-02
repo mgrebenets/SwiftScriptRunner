@@ -6,9 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   SwiftScriptRunner:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  SwiftScriptRunner: f2e166de0c469c6693048c213b973c1ffde2d352
+  SwiftScriptRunner: 560ee669d781e9285399faac80064727b987fdcb
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 99bfc4adaadefbd65f45d0c89a7e9b52754f1d66
+
+COCOAPODS: 1.4.0
